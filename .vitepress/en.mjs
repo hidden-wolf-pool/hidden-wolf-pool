@@ -37,7 +37,7 @@ export const en = {
 
         sidebar: getSidebar({
             contentRoot: resolve(__dirname, '../docs'),
-            contentDirs: ['en/devops/ansible', 'en/linux/commands'],
+            contentDirs: ['en/devops', 'en/linux'],
             useFrontmatter: true,
             collapsible: true,
             collapsed: true,
