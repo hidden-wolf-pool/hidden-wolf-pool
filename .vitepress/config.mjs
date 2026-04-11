@@ -3,51 +3,27 @@ import {
 } from 'vitepress'
 
 import {
-    getSidebar
-} from 'vitepress-plugin-auto-sidebar'
+    en
+} from './en.mjs'
 
 import {
-    dirname,
-    resolve
-} from 'path';
+    ru
+} from './ru.mjs'
 
-// https://vitepress.dev/reference/site-config
+import {
+    shared
+} from './shared.mjs'
+
 export default defineConfig({
-    srcDir: "docs",
-
-    title: "Hidden Wolf Pool",
-    description: "IT is a strange thing. Especially the presence of wolves.",
-    themeConfig: {
-        nav: [{
-                text: '🏠 Home',
-                link: '/'
-            },
-            {
-                text: '🔁 DevOps',
-                items: [{
-                    text: '🛠️ Ansible',
-                    link: '/devops/ansible/'
-                }, ]
-            }
-        ],
-
-        socialLinks: [{
-            icon: 'github',
-            link: 'https://github.com/hidden-wolf-pool/hidden-wolf-pool.github.io'
-        }],
-
-        search: {
-            provider: 'local'
+    ...shared,
+    locales: {
+        root: {
+            label: 'English',
+            ...en
         },
-
-        sidebar: getSidebar({
-            contentRoot: resolve(__dirname, '../docs'),
-            contentDirs: ['devops/ansible'],
-            useFrontmatter: true,
-            collapsible: true,
-            collapsed: true,
-        }),
-    },
-    cleanUrls: true,
-
+        ru: {
+            label: 'Русский',
+            ...ru,
+        },
+    }
 })
