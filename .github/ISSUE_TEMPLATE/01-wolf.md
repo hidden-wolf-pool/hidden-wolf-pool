@@ -1,10 +1,9 @@
 ---
-name: Join to Contributor Team
-title: [WOLF] New Contributor
-labels:
-    - wolf
-assignees:
-    - alimektor
+name: "🐺 Join to Hidden Wolf Pool"
+about: "Join to the contributor team"
+title: "[WOLF] New Guy"
+labels: wolf
+assignees: alimektor
 ---
 ## How Do I Get Started? ##
 
@@ -15,6 +14,8 @@ assignees:
 5. [Submit a pull request](https://docs.github.com/en/get-started/quickstart/fork-a-repo)
 
 ## Rules ##
+
+Please, accept the following rules:
 
 ### Content General Requirements ###
 
