@@ -42,5 +42,8 @@ export const en = {
             collapsible: true,
             collapsed: true,
         }),
+        editLink: {
+            pattern: 'https://github.com/hidden-wolf-pool/hidden-wolf-pool.github.io/edit/main/docs/:path'
+        }
     },
 };
